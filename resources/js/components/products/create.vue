@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h2 class="text-center">Create product</h2>
+        <h2 class="text-center">Create Blog</h2>
         <div class="row">
             <div class="col-md-12">
                 <router-link :to="{ name: 'ProductIndex' }" class="btn btn-primary btn-sm float-right mb-2">Back</router-link>

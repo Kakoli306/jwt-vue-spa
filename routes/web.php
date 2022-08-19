@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('{any}', function () {
-    return view('layout.app');
-})->where('any', '.*');
+// Route::get('{any}', function () {
+//     return view('layout.app');
+// })->where('any', '.*');
+Route::get('/', function () {
+    return view('home');
+})->middleware('auth');
+
+Route::get('{any?}', function() {
+    return view('home');
+})->where('any', '.*')->middleware('auth');
